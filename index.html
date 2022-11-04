@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e dimiua o tamanho do seu navegar.</p>
+    <!--Usamos a tag pictures para poder usar imagens redimencionadas ligando ela a tag source media type cuidado a ordem dos sources tem que ser respeitadas, img maior e menores acima -->
+    <picture>
+        <source media="(max-width:750px)" srcset="Imagens/FotoP.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="Imagens/FotoM.png" type="image/png"> 
+        <img src="Imagens/FotoG.png" alt="Imagem flexível">
+    </picture>
+</body>
+</html>
