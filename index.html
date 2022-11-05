@@ -15,5 +15,18 @@
         <source media="(max-width: 1050px )" srcset="Imagens/FotoM.png" type="image/png"> 
         <img src="Imagens/FotoG.png" alt="Imagem flexível">
     </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio preload="metadata" autoplay controls loop>
+        <!--audio preload="auto rodara a musica automaticamente e so carregara o site só depois de carregar o audio/ none não tocara e metadata ele lera apenas as informações e so tocara quando o usuario der play"-->
+        <!--arquivos de audio evite wave pq eles são maiores, lembresse que ele carregara na escolha do source por ordem de cima para baixo-->
+
+        <source src="midia/end-of-the-dream.mp3" type="audio/mpeg">
+        <source src="midia/end-of-the-dream.ogg" type="audio/ogg"> 
+        <source src="/midia/end-of-the-dream.wav" type="audio/wav">  
+        <a>Infelizmente seu navegador não consegue reproduzir áudio. <hr href="midia/end-of-the-dream.mp3"> Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    
+
 </body>
 </html>
